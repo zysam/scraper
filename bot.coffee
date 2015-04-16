@@ -3,7 +3,7 @@ Scraper = require './scraper'
 Model = require './model'
 show = console.log
 
-url = 'http://www.dianping.com/search/category/1/10/g132'
+url = 'http://www.dianping.com/search/category/2/10/g132'
 COUNT = 0
 PAGES_LIMITS = 50
 DB_COUNT = 0
@@ -15,7 +15,7 @@ class YoScraper extends Scraper
 
 	init : ->
 
-		@loadWebPage @url,wizard()
+		@loadWebPage @url,wizard
 
 		@on 'error',@handleErr
 
@@ -31,7 +31,6 @@ class YoScraper extends Scraper
 			show '%s db runing.',DB_COUNT
 			if err then @emit 'error',err else @emit 'complete'
 
-
 	complete : ->
 		show 'complete website : %s',DB_COUNT
 		if DB_COUNT is PAGES_LIMITS
@@ -41,8 +40,8 @@ class YoScraper extends Scraper
 		show 'has some error ,%s',err
 		wizard()
 
-	#your parse's rule.
-	parseYour : (html) ->
+	#your cheerio rule.
+	parseYourWeb : (html) ->
 		$ = @parseLoad html
 		docs = []
 
@@ -66,7 +65,6 @@ Urls = geraterUrls PAGES_LIMITS
 wizard = ->
 	if !Urls.length
 		show 'Run all pages!!'
-		#mongoose.disconnect()
 	else
 		url = Urls.shift()
 		scraper = new YoScraper url

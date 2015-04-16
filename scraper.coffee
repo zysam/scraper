@@ -22,8 +22,8 @@ class Scraper extends EventEmitter
 		@on 'complete',@complete
 	###
 
-	loadWebPage : (opts,cb) ->
-		cb = cb or ->
+	loadWebPage : (opts,fn) ->
+		fn = fn or ->
 		if typeof opts is 'string'
 			show 'Loading ' + opts
 		else
@@ -39,7 +39,7 @@ class Scraper extends EventEmitter
 
 			res.on 'end', =>
 				@emit 'loaded',body
-				cb
+				fn()
 			return
 		req.on 'error',(err) =>
 			@emit 'error',err
