@@ -22,7 +22,7 @@ class Tscraper extends Scraper
 
 	read2Test : (path) ->
 		fs.readFile path,{encoding:'utf8'},(err,data) =>
-			console.log 'reading file.'
+			show 'reading file.'
 			if err then @emit 'error',err else @emit 'loaded',data
 
 	write2Test : (data) ->

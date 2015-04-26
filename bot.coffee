@@ -53,7 +53,7 @@ class YoScraper extends Scraper
 	exit : ->
 		mongoose.disconnect()
 
-geraterUrls = (limit) ->
+generateUrls = (limit) ->
 	urls = []
 	urls.push url
 	urls.push url + 'p' + i for i in [2..limit]
