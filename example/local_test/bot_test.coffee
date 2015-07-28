@@ -1,6 +1,6 @@
 
 fs = require 'fs'
-Scraper = require './scraper'
+Scraper = require '../../lib/'
 show = console.log
 
 class Tscraper extends Scraper
@@ -44,4 +44,3 @@ filepath = './test/gz_movie_p1.html'
 destpath = './test/test_gz_movie.json'
 
 scraper = new Tscraper filepath,destpath
-

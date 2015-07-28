@@ -1,24 +1,29 @@
-##一个简单的爬虫 scraper,并发嘿嘿
+##一个简单的爬虫 scraper
 ---
-依赖
+依赖环境
 ```
-coffeescript
 node.js 0.11.x
-cheerio
-mongoose
+coffeescript 可选
+
 ```
+依赖包
+```
+cheerio
+mongoose 可选
+```
+
 主要是试验 CoffeeScript 之美。
-
-不好意思，拿大众点评的咖啡店来练习.
-
-test 名称的可以拿本地 html 来练习 cheerio.
+然后是一些例子 ./example
+1.不好意思，拿大众点评的咖啡店来练习。
+2.ishadowsocks 提取免费配置
+注：带test的 本地 html 来练习 cheerio.
 
 ---
 脚本启动
 
 ```
 npm start
-npm test
+
 
 ```
 MIT

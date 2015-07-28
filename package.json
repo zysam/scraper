@@ -7,17 +7,26 @@
     "test": "test"
   },
   "scripts": {
-    "start": "node index.js",
-    "test2": "node index_test.js",
-    "test" : "node --harmony index_promise.js"
+    "start": "coffee index.coffee",
+    "app": "node --harmony app.js",
+    "test": ""
   },
   "keywords": [
-    "scraper","coffeescript"
+    "scraper",
+    "coffeescript"
   ],
   "author": "zysam",
   "license": "MIT",
   "dependencies": {
     "cheerio": "^0.19.0",
     "mongoose": "^4.0.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zysam/scraper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zysam/scraper/issues"
+  },
+  "homepage": "https://github.com/zysam/scraper"
 }

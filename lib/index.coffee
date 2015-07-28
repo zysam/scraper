@@ -1,4 +1,7 @@
-
+###*
+ * [EventEmitter description]
+ * @type {[type]}
+###
 EventEmitter = require('events').EventEmitter
 cheerio = require 'cheerio'
 http = require 'http'
@@ -55,22 +58,22 @@ class Scraper extends EventEmitter
 
 		$('#shop-all-list ul li')
 			.each (i,elem) ->
-				model = new Object 
+				model = new Object
 					shopName : ''
 					link : ''
 					pic : ''
 					addr : ''
-					cate : 
+					cate :
 						life : new Array
 						buss : new Array
 					comment : new Array
-					
+
 				#console.log 'i:%s',i
 				#console.log i + ':' + $('.txt .tag-addr span',@).text()
 				model.shopName = $('.txt .tit a',@).attr('title')
 				model.link = $('.txt .tit a',@).attr('href')
 				model.pic = $('.pic a img',@).attr('data-src')
-				
+
 				$('.txt .tag-addr',@)
 					.each (i,elem) ->
 						model.addr = $('.addr',@).text()
@@ -93,4 +96,3 @@ class Scraper extends EventEmitter
 		show 'all have done!!'
 
 module.exports = Scraper
-

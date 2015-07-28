@@ -1,5 +1,5 @@
 mongoose = require 'mongoose'
-Scraper = require './scraper'
+Scraper = require '../../lib/'
 Model = require './model'
 show = console.log
 
@@ -48,7 +48,7 @@ class YoScraper extends Scraper
 		#your rule
 		#
 		#
-		
+
 		@emit 'parsed',docs
 	exit : ->
 		mongoose.disconnect()

@@ -1,0 +1,25 @@
+{
+	"configs": [{
+			"server": "US3.SSSERVER.PW",
+			"server_port": 8989,
+			"password": "69896802",
+			"method": "aes-256-cfb",
+			"remarks": "C服务器地址"
+		}, {
+			"server": "US1.SSSERVER.PW",
+			"server_port": 8989,
+			"password": "94942165",
+			"method": "aes-256-cfb",
+			"remarks": "A服务器地址"
+		}
+
+	],
+	"index": 0,
+	"global": false,
+	"enabled": false,
+	"shareOverLan": false,
+	"isDefault": false,
+	"localPort": 1080,
+	"pacUrl": null,
+	"useOnlinePac": false
+}
