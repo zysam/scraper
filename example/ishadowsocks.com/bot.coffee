@@ -51,5 +51,5 @@ class Bot extends Scraper
 
 url = 'http://www.ishadowsocks.com/'
 destpath = './data/gui-config.json'
-realpath = 'D:\\lam\\Shadowsocks-win\\gui-config.json'
+realpath = 'D:\\Program Files\\shadowsocks\\gui-config.json'
 bot = new Bot(url, realpath)
