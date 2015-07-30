@@ -1,6 +1,6 @@
 {
   "name": "scraper",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "scraper some web",
   "main": "index.js",
   "directories": {
@@ -9,7 +9,9 @@
   "scripts": {
     "start": "coffee index.coffee",
     "app": "node --harmony app.js",
-    "test": ""
+    "test": "",
+    "ishadowsocks": "coffee ./example/ishadowsocks.com/bot.coffee",
+    "iss": "coffee ./example/ishadowsocks.com/bot.coffee"
   },
   "keywords": [
     "scraper",

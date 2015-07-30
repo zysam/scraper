@@ -5,10 +5,10 @@ show = console.log
 
 class Bot extends Scraper
 	constructor : (@path,@destpath) ->
-		@init2Test()
+		@init()
 
-	init2Test : ->
-		show 'Runing test ...'
+	init : ->
+		show 'Runing ...'
 
 		@loadWebPage @path
 
@@ -51,5 +51,5 @@ class Bot extends Scraper
 
 url = 'http://www.ishadowsocks.com/'
 destpath = './data/gui-config.json'
-
-bot = new Bot(url, destpath)
+realpath = 'D:\\lam\\Shadowsocks-win\\gui-config.json'
+bot = new Bot(url, realpath)

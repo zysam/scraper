@@ -14,7 +14,8 @@
 		}
 
 	],
-	"index": 0,
+	"strategy": "com.shadowsocks.strategy.ha",
+	"index": -1,
 	"global": false,
 	"enabled": false,
 	"shareOverLan": false,
