@@ -1,0 +1,29 @@
+Remote Address:127.0.0.1:1080
+Request URL:http://sis001.us/forum/attachment.php?aid=2635436
+Request Method:GET
+Status Code:200 OK
+Response Headers
+view source
+Connection:close
+Content-Disposition:attachment; filename="Show01.torrent"
+Content-Encoding:none
+Content-Length:46936
+Content-Type:application/x-bittorrent
+Date:Sun, 23 Aug 2015 05:30:57 GMT
+Last-Modified:Sat, 22 Aug 2015 11:53:27 GMT
+Set-Cookie:cdb2_sid=rA9GfY; expires=Sun, 30-Aug-2015 05:30:57 GMT; path=/
+Vary:Accept-Encoding
+X-Powered-By:PHP/5.2.17
+Request Headers
+view source
+Accept:text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Encoding:gzip, deflate, sdch
+Accept-Language:zh-CN,zh;q=0.8
+Cache-Control:no-cache
+Connection:keep-alive
+Cookie:__utmt=1; cdb2_oldtopics=D9465062D; cdb2_fid77=1440244407; __utma=214532757.1904364571.1440307681.1440307681.1440307681.1; __utmb=214532757.5.10.1440307681; __utmc=214532757; __utmz=214532757.1440307681.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); cdb2_sid=uhmhzj
+DNT:1
+Host:sis001.us
+Pragma:no-cache
+Upgrade-Insecure-Requests:1
+User-Agent:Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36

@@ -14,7 +14,7 @@
 		}
 
 	],
-	"strategy": "com.shadowsocks.strategy.ha",
+	"strategy" : "com.shadowsocks.strategy.balancing",
 	"index": -1,
 	"global": false,
 	"enabled": false,

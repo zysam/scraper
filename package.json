@@ -4,31 +4,35 @@
   "description": "scraper some web",
   "main": "index.js",
   "directories": {
+    "example": "example",
     "test": "test"
   },
   "scripts": {
-    "start": "coffee index.coffee",
     "app": "node --harmony app.js",
-    "test": "",
     "ishadowsocks": "coffee ./example/ishadowsocks.com/bot.coffee",
-    "iss": "coffee ./example/ishadowsocks.com/bot.coffee"
+    "iss": "coffee ./example/ishadowsocks.com/bot.coffee",
+    "movie": "cd ./example/movie && coffee bot.coffee",
+    "start": "coffee index.coffee",
+    "test": ""
   },
   "keywords": [
-    "scraper",
-    "coffeescript"
+    "coffeescript",
+    "scraper"
   ],
   "author": "zysam",
   "license": "MIT",
   "dependencies": {
     "cheerio": "^0.19.0",
+    "iconv-lite": "^0.4.11",
     "mongoose": "^4.0.1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/zysam/scraper.git"
+    "url": "git+https://github.com/zysam/scraper.git"
   },
   "bugs": {
     "url": "https://github.com/zysam/scraper/issues"
   },
-  "homepage": "https://github.com/zysam/scraper"
+  "homepage": "https://github.com/zysam/scraper",
+  "devDependencies": {}
 }
