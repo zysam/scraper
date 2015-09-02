@@ -7,11 +7,12 @@
     "test": "test"
   },
   "scripts": {
-    "start": "coffee index.coffee",
+    "start": "coffee --nodejs --harmony ./example/promise/gen.coffee ",
     "app": "node --harmony app.js",
     "test": "",
     "ishadowsocks": "coffee ./example/ishadowsocks.com/bot.coffee",
-    "iss": "coffee ./example/ishadowsocks.com/bot.coffee"
+    "iss": "coffee ./example/ishadowsocks.com/bot.coffee",
+    "new": "node --harmony ./example/promise/gen.js"
   },
   "keywords": [
     "scraper",
@@ -20,8 +21,9 @@
   "author": "zysam",
   "license": "MIT",
   "dependencies": {
-    "cheerio": "^0.19.0",
-    "mongoose": "^4.0.1"
+    "cheerio": "latest",
+    "co": "^4.6.0",
+    "co-parallel": "^1.0.0"
   },
   "repository": {
     "type": "git",
